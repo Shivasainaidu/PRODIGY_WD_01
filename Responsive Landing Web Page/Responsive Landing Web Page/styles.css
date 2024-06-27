@@ -1,0 +1,78 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.navbar.scrolled {
+    background: linear-gradient(to right, #2a5298, #1e3c72);
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out, font-style 0.3s ease-in-out;
+}
+
+.nav-item a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-style: italic;
+}
+
+/* Section Styles */
+main {
+    padding-top: 60px;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s ease-in-out;
+}
+
+section:nth-child(odd) {
+    background: #e2e2e2;
+}
+
+section.active {
+    background: #87CEEB; /* Change this color to whatever you prefer */
+}
